@@ -12,6 +12,10 @@ class PokemonService {
     console.log(res.data);
     ProxyState.pokemon = res.data.results.map((p) => new Pokemon(p));
   }
+
+  collectPokemon() {
+    console.log("keep pokemon");
+  }
 }
 
 export const pokemonService = new PokemonService();

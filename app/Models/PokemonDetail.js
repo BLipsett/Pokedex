@@ -6,7 +6,7 @@ export class PokemonDetail {
   //     this.weight = weight;
   //     this.user = user;
   //     this.types = types;
-  //     this.img = img || sprites;
+  //     this.img = img || sprites.front_shiny;
   //   }
 
   constructor(data) {
@@ -28,7 +28,7 @@ export class PokemonDetail {
                 <span><p>Height: ${this.height}</P></span>
                 <span><p>Types: ${this.Types}</p></span>
                 <img src="${this.img}"> </img>
-
+                <button class="btn btn-success btn-block" onclick="app.pokemonController.collectPokemon()">Abduct creature with small ball</button>
             </div>
         </div>
     </div>

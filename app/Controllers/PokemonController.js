@@ -17,4 +17,8 @@ export class PokemonController {
   getPokemon() {
     pokemonService.getPokemon();
   }
+
+  collectPokemon() {
+    pokemonService.collectPokemon();
+  }
 }
